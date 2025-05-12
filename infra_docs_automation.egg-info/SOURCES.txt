@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+setup.py
+auto_doc/__init__.py
+auto_doc/ci_pipeline.py
+auto_doc/extractor.py
+auto_doc/generator.py
+auto_doc/prompter.py
+auto_doc/renderer.py
+infra_docs_automation.egg-info/PKG-INFO
+infra_docs_automation.egg-info/SOURCES.txt
+infra_docs_automation.egg-info/dependency_links.txt
+infra_docs_automation.egg-info/entry_points.txt
+infra_docs_automation.egg-info/requires.txt
+infra_docs_automation.egg-info/top_level.txt

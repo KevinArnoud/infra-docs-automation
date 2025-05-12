@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: infra-docs-automation
+Version: 0.1.0
+Summary: Outil IA pour générer automatiquement des documentations HTML à partir de code infra/dev/secops
+Author: Kevin Arnoud
+Author-email: kev.arnoud@outlook.fr
+Requires-Dist: openai
+Requires-Dist: jinja2
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
+Dynamic: summary
