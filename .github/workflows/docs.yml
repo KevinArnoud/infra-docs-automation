@@ -1,13 +1,19 @@
 name: Génération Documentation IA
 
+# Autoriser le workflow à écrire dans le dépôt
+permissions:
+  contents: write
+
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
+    # Injection de la clé OpenAI depuis les Secrets GitHub
     env:
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
@@ -15,9 +21,9 @@ jobs:
       - name: Checkout du code
         uses: actions/checkout@v3
         with:
-          # Réactive l'usage de GITHUB_TOKEN pour push
+          # Permet d’utiliser GITHUB_TOKEN pour push
           persist-credentials: true
-          # On récupère tout l'historique pour permettre les commits
+          # Récupère tout l’historique pour les commits
           fetch-depth: 0
 
       - name: Configurer Python
